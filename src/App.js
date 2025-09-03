@@ -1,16 +1,17 @@
-import "./App.css";
+import "./App.scss";
 
 function App() {
   return (
-    <section>
-      <h1>Prompt Generator</h1>
-      <div>
-        <div className="rawtextarea-div">
+    <main>
+      <div className="header">
+        <h1>Prompt Generator</h1>
+      </div>
+      <container className="grid">
+        <div className="inputspace">
           <div>
             <textarea
-              name=""
+              className="textarea"
               placeholder="Write your text here."
-              id=""
               rows={5}
               cols={40}
             ></textarea>
@@ -38,54 +39,68 @@ function App() {
           <br />
           <div>
             <label htmlFor="">Color Scheme: </label>
-            <select name="" id=""></select>
+            <select name="" id="">
+              <option value="vibrant">Vibrant</option>
+              <option value="monochrome">Monochrome</option>
+            </select>
           </div>
 
           <br />
 
           <div>
             <label htmlFor="">Perspective: </label>
-            <select name="" id=""></select>
+            <select name="" id="">
+              <option value="frontview">Front view</option>
+              <option value="sideview">Side view</option>
+            </select>
           </div>
 
           <br />
 
           <div>
             <label htmlFor="">Mood: </label>
-            <select name="" id=""></select>
+            <select name="" id="">
+              <option value="happy">Happy</option>
+              <option value="sad">Sad</option>
+            </select>
           </div>
 
           <br />
 
           <div>
             <label htmlFor="">Light: </label>
-            <select name="" id=""></select>
+            <select name="" id="">
+              <option value="natural">Natural</option>
+              <option value="soft">Soft</option>
+              <option value="harsh">Harsh</option>
+              <option value="candlelight">Candlelight</option>
+            </select>
           </div>
 
           <br />
 
           <div>
-            <button>Generate</button>
+            <button className="btn">Generate</button>
           </div>
         </div>
 
-        <div className="readytextarea-div">
+        <div className="outputspace">
           <textarea
-            name=""
+            className="textarea"
             placeholder="Your prompt would appear here."
-            id=""
             rows={10}
             cols={50}
+            disabled="yes"
           ></textarea>
 
           <br />
 
           <div>
-            <button>Save to buffer</button>
+            <button className="btn">Save to buffer</button>
           </div>
         </div>
-      </div>
-    </section>
+      </container>
+    </main>
   );
 }
 
