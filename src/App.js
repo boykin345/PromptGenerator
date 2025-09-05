@@ -1,4 +1,5 @@
 import "./App.scss";
+import Swapi from "./Swapi.js";
 
 function App() {
   return (

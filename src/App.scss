@@ -12,7 +12,6 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  justify-content: center;
 }
 
 .grid {
@@ -31,7 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 1px;
   min-height: 450px;
 }
 
@@ -41,25 +40,24 @@ body {
   align-items: center;
   justify-content: center;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 1px;
   min-height: 450px;
 }
 
 .btn {
-  border: 2px solid black;
-  border-radius: 5px;
+  border: none;
   margin: 5px;
   padding: 5px;
+  background: white;
   &:active {
     transform: scale(0.98);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    border: 0px;
   }
 }
 
 .textarea {
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 1px;
   margin: 5px;
   padding: 5px;
   resize: none;
